@@ -1,4 +1,4 @@
-/**
+package hoofstuk5en6; /**
  * Created by Romy Mae on 15-9-2016.
  */
 import java.awt.*;
@@ -13,6 +13,9 @@ public class PraktijkZes extends Applet {
     int e;
     double f;
     double uitkomst;
+    double gemiddelde;
+    int afgekapt1;
+    double afgekapt2;
 
 
 
@@ -24,14 +27,16 @@ public class PraktijkZes extends Applet {
         d = 3;
         e = 10;
         f = 10.0;
-        uitkomst = Math.round (((a + b + c) /d)*e)/f;
+      gemiddelde = (a+b+c)/d;
+        afgekapt1 = (int) (gemiddelde*e);
+        afgekapt2 = (double) afgekapt1/f;
 
 
 
     }
 
     public void paint(Graphics g) {
-        g.drawString("gemiddelde cijfer is " + uitkomst, 20, 20);
+        g.drawString("gemiddelde cijfer is " + afgekapt2, 20, 20);
     }
 }
 
